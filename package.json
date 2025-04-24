@@ -8,20 +8,21 @@
         "illuminate/support": "^8.0|^9.0|^10.0"
     },
     "autoload": {
-        "psr-4": {
-            "Deepak\\LaravelHelper\\": "src/"
+    "psr-4": {
+        "DeepakDev\\LaravelHelper\\": "src/"
+    }
+},
+"extra": {
+    "laravel": {
+        "providers": [
+            "DeepakDev\\LaravelHelper\\LaravelHelperServiceProvider"
+        ],
+        "aliases": {
+            "LaravelHelper": "DeepakDev\\LaravelHelper\\Facades\\LaravelHelperFacade"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Deepak\\LaravelHelper\\LaravelHelperServiceProvider"
-            ],
-            "aliases": {
-                "LaravelHelper": "Deepak\\LaravelHelper\\Facades\\LaravelHelperFacade"
-            }
-        }
-    },
+    }
+},
+
     "license": "MIT",
     "authors": [
         {
